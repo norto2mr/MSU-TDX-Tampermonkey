@@ -1,7 +1,8 @@
 // ==UserScript==
 // @name         TDX MSU Environment Detector
 // @namespace    http://tampermonkey.net/
-// @version      1.1
+// @homepage     https://github.com/norto2mr/MSU-TDX-Tampermonkey
+// @version      1.2
 // @description  Detects MSU's TDX environment and overlays a warning
 // @author       Matt Norton
 // @match        https://msuitdev.teamdynamix.com/SBTDAdmin/*
