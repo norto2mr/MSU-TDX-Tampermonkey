@@ -2,7 +2,7 @@
 // @name         TDX MSU Environment Detector
 // @namespace    http://tampermonkey.net/
 // @homepage     https://github.com/norto2mr/MSU-TDX-Tampermonkey
-// @version      1.2
+// @version      1.3
 // @description  Detects MSU's TDX environment and overlays a warning
 // @author       Matt Norton
 // @match        https://msuitdev.teamdynamix.com/SBTDAdmin/*
@@ -40,7 +40,7 @@
 
     var banner = document.createElement("div");
     banner.id = "tdxwarning"
-    banner.innerHTML = `<marquee scrollamount='50' behavior='alternate'>${env} ENVIRONMENT</marquee>`;
+    banner.innerHTML = `<marquee scrollamount='50'>${env} ENVIRONMENT</marquee>`;
     banner.style = `position:fixed;z-index:99999;bottom:0;right:0;width:100%;height:10vh;font-size:6vh;opacity:.5;color:white;background-color:${color};`;
     document.body.firstChild.before(banner);
     banner.addEventListener ("click", removeBanner, false);
